@@ -4,7 +4,7 @@
 #
 Name     : R-statmod
 Version  : 1.4.30
-Release  : 36
+Release  : 37
 URL      : https://cran.r-project.org/src/contrib/statmod_1.4.30.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/statmod_1.4.30.tar.gz
 Summary  : Statistical Modeling
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552799388
+export SOURCE_DATE_EPOCH=1552934124
 
 %install
-export SOURCE_DATE_EPOCH=1552799388
+export SOURCE_DATE_EPOCH=1552934124
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
