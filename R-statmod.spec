@@ -4,7 +4,7 @@
 #
 Name     : R-statmod
 Version  : 1.4.34
-Release  : 47
+Release  : 48
 URL      : https://cran.r-project.org/src/contrib/statmod_1.4.34.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/statmod_1.4.34.tar.gz
 Summary  : Statistical Modeling
@@ -26,21 +26,22 @@ lib components for the R-statmod package.
 
 %prep
 %setup -q -c -n statmod
+cd %{_builddir}/statmod
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581995359
+export SOURCE_DATE_EPOCH=1590012942
 
 %install
-export SOURCE_DATE_EPOCH=1581995359
+export SOURCE_DATE_EPOCH=1590012942
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
