@@ -4,7 +4,7 @@
 #
 Name     : R-statmod
 Version  : 1.4.35
-Release  : 51
+Release  : 52
 URL      : https://cran.r-project.org/src/contrib/statmod_1.4.35.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/statmod_1.4.35.tar.gz
 Summary  : Statistical Modeling
