@@ -4,7 +4,7 @@
 #
 Name     : R-statmod
 Version  : 1.5.0
-Release  : 70
+Release  : 71
 URL      : https://cran.r-project.org/src/contrib/statmod_1.5.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/statmod_1.5.0.tar.gz
 Summary  : Statistical Modeling
@@ -12,9 +12,6 @@ Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-statmod-lib = %{version}-%{release}
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 No detailed description available
@@ -36,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673020015
+export SOURCE_DATE_EPOCH=1678831100
 
 %install
-export SOURCE_DATE_EPOCH=1673020015
+export SOURCE_DATE_EPOCH=1678831100
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
